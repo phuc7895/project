@@ -1,0 +1,95 @@
+"id1" : {
+      "muscles" : "legs",
+      "name" : "Pistol Squat",
+      "url" : "http://www.menshealth.com.sg/sites/default/files/oimg/shared/fitness/illustrated-exercise/3__Pistol_squat_Article.jpg"
+    },
+"id10" : {
+      "muscles" : "legs",
+      "name" : "Lunge",
+      "url" : "https://healthymade.nl/img/blog/18/Lunge.png"
+    },
+"id11" : {
+      "muscles" : "legs",
+      "name" : "Chair Squat Pose",
+      "url" : "http://workoutlabs.com/wp-content/uploads/watermarked/Wall_Sit_squat_M_WorkoutLabs.png"
+    },
+"id12" : {
+      "muscles" : "Chest & Back",
+      "name" : "Standard Push-Up",
+      "url" : "http://workoutlabs.com/wp-content/uploads/watermarked/Wide_Pushup1.png"
+    },
+"id13" : {
+      "muscles" : "Chest & Back",
+      "name" : "Donkey Kick",
+      "url" : "https://i.pinimg.com/originals/c2/bb/1e/c2bb1e4d27b80ea87f6d8297d094b607.png"
+    },
+"id14" : {
+      "muscles" : "Chest & Back",
+      "name" : "Judo Push-up",
+      "url" : "http://workoutlabs.com/wp-content/uploads/watermarked/Dive_Bomber_Push-up_M_WorkoutLabs.png"
+    },
+"id15" : {
+      "muscles" : "Shoulders & Arms",
+      "name" : "Triceps Dip",
+      "url" : "https://i.pinimg.com/564x/f3/d2/b7/f3d2b7a1c42c275751843236272edb99.jpg"
+    },
+"id16" : {
+      "muscles" : "Shoulders & Arms",
+      "name" : "Diamond Push-Up",
+      "url" : "http://alphadark.com/wp-content/uploads/2014/05/diamond-push-up.png"
+    },
+"id17" : {
+      "muscles" : "Shoulders & Arms",
+      "name" : "Arm Circles",
+      "url" : "http://cdn.list25.com/wp-content/uploads/2012/02/shouldercircles.png"
+
+    },
+"id18" : {
+      "muscles" : "Core",
+      "name" : "Bicycle",
+      "url" : "https://cdn-image.realsimple.com/sites/default/files/styles/portrait_435x518/public/image/images/0911/abs-bicycle_300.jpg?itok=ZzMUYSIn"
+    },
+"id19" : {
+      "muscles" : "Core",
+      "name" : "Flutter Kick",
+      "url" : "http://www.armyreal.com/images/apft/8-10_b.jpg"
+    },
+"id20" : {
+      "muscles" : "Core",
+      "name" : "Shoulder Bridge",
+      "url" : "https://cdn.saveourbones.com/wp-content/uploads/stablility-bridge.gif"
+    },
+	
+	
+	
+"id100" : {
+      "exercise" : "Forward Band Walk",
+      "eq-name" : "Band",
+      "url" : "https://ae01.alicdn.com/kf/HTB1CpiRLXXXXXXPXXXXq6xXFXXXJ/Latex-Athletic-Rubber-Bands-Fitness-Resistance-Band-Yoga-Crossfit-Equipment-Elastic-Belt-Thin-Leg-Workout-Gym.jpg"
+    },
+
+"id110" : {
+      "exercise" : "Bent Press",
+      "eq-name" : "Kettlebell",
+      "url" : "https://cdn1.bigcommerce.com/server3900/zvhwp/images/stencil/original/products/1023/2847/92kg-front__09849.1471232117.jpg?c=2"
+    },
+
+"id120" : {
+      "exercise" : "Barbell Curl",
+      "eq-name" : "Barbell",
+      "url" : "https://intekstrength.com/wp-content/uploads/bravo-series-straight-barbell.png"
+    },
+
+"id130" : {
+      "exercise" : "Dumbbell Curl,
+      "eq-name" : "Dumbbell",
+      "url" : "http://www.ironcompany.com/productimages/ironcompany/rubber-hex-dumbbells-xlg.jpg"
+    },
+
+"id140" : {
+      "exercise" : "V-Bar Pulldown",
+      "eq-name" : "Cable",
+      "url" : "http://www.fitness-superstore.co.uk/media/catalog/product/9/2/9279_0_1.jpg"
+    },
+
+          
