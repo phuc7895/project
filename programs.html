@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+        
+<script src="https://www.gstatic.com/firebasejs/4.4.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCfGmaGWbm_trFS0BR9byrVlZGpMkqeDcw",
+    authDomain: "projet-soa.firebaseapp.com",
+    databaseURL: "https://projet-soa.firebaseio.com",
+    projectId: "projet-soa",
+    storageBucket: "projet-soa.appspot.com",
+    messagingSenderId: "954327189191"
+  };
+  firebase.initializeApp(config);
+
+
+
+</script>
+    </head>
+    <body>
+      <section class="container" id="appArea">
+     
+      </section>
+    </body>
+    <script>
+  var ref = firebase.database().ref().child('program');
+  var program;
+  ref.once('value', (snap) => {
+      program = snap.val();
+  }).then(() => {renderProgram()})
+
+//   setTimeout(() => {renderProgram()}, 1000)
+  let renderProgram = () => {
+        document.getElementById('appArea').innerHTML = '';
+        let keys = Object.keys(program);
+        console.log(program);
+            keys.map((programID) => {
+            // Block of 1 program
+                let block = document.createElement('div');
+                block.className = "program-block";
+            // Program Image
+                let programImage = document.createElement('img');
+                programImage.className = 'program-image';
+                programImage.src = program[programID].url;
+                block.appendChild(programImage);
+            // Program Title
+                let programName = document.createElement('p');
+                programName.className = 'program-title';
+                progName = document.createTextNode(program[programID].name);
+                programName.appendChild(progName);
+                block.appendChild(programName)
+            // Program Description
+                let programDescription = document.createElement('p');
+                programDescription.className = 'program-desc';
+                progDesc = document.createTextNode(program[programID].description);
+                programDescription.appendChild(progDesc);
+                block.appendChild(programDescription)   
+            // Add all to app area
+                document.getElementById('appArea').appendChild(block);
+            })
+        
+    }
+    </script>
+</html>

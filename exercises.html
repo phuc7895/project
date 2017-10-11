@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+        
+<script src="https://www.gstatic.com/firebasejs/4.4.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCfGmaGWbm_trFS0BR9byrVlZGpMkqeDcw",
+    authDomain: "projet-soa.firebaseapp.com",
+    databaseURL: "https://projet-soa.firebaseio.com",
+    projectId: "projet-soa",
+    storageBucket: "projet-soa.appspot.com",
+    messagingSenderId: "954327189191"
+  };
+  firebase.initializeApp(config);
+
+
+
+</script>
+    </head>
+    <body>
+      <section class="container" id="appArea">
+     
+      </section>
+    </body>
+    <script>
+  var ref = firebase.database().ref().child('exercises');
+  var exercice;
+  ref.once('value', (snap) => {
+      exercice = snap.val();
+  }).then(() => {renderExercises()})
+
+//   setTimeout(() => {renderExercises()}, 1000)
+  let renderExercises = () => {
+        document.getElementById('appArea').innerHTML = '';
+        let keys = Object.keys(exercice);
+        console.log(exercice);
+            keys.map((exerciseID) => {
+            // Block of 1 exercise
+                let block = document.createElement('div');
+                block.className = "exercise-block";
+            // Exercise Image
+                let exerciseImage = document.createElement('img');
+                exerciseImage.className = 'exercise-image';
+                exerciseImage.src = exercice[exerciseID].url;
+                block.appendChild(exerciseImage);
+            // Exercise Title
+                let exerciseName = document.createElement('p');
+                exerciseName.className = 'exercise-title';
+                exName = document.createTextNode(exercice[exerciseID].name);
+                exerciseName.appendChild(exName);
+                block.appendChild(exerciseName)
+            // Exercise Description
+                let exerciseDescription = document.createElement('p');
+                exerciseDescription.className = 'exercise-desc';
+                exDesc = document.createTextNode(exercice[exerciseID].description);
+                exerciseDescription.appendChild(exDesc);
+                block.appendChild(exerciseDescription)   
+            // Add all to app area
+                document.getElementById('appArea').appendChild(block);
+            })
+        
+    }
+    </script>
+</html>
